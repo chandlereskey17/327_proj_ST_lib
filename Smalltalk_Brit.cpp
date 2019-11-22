@@ -5,19 +5,17 @@
  *      Author: guest-zcjj54
  */
 #pragma once
-#include "../includes/Smalltalk.h"
-#include "../includes/Smalltalk_Brit.h"
-#include "../includes/constants.h"
-#include "../includes/Watch.h"
+#include "./includes/Smalltalk.h"
+#include "./includes/Smalltalk_Brit.h"
+#include "./includes/constants.h"
+#include "./includes/Watch.h"
 #include <vector>
 #include <string>
 
-class Smalltalk_Brit : public Smalltalk
-{
-public:
 	//create with appropriate phrases
-	Smalltalk_Brit::Smalltalk_Brit(int iPerson=1){
-
+	Smalltalk_Brit::Smalltalk_Brit(int iPerson):
+		Smalltalk(BRIT, iPerson){
+		populatePhrases();
 	}
 	Smalltalk_Brit::~Smalltalk_Brit(void){
 
@@ -31,7 +29,7 @@ public:
 		mySmallTalk.push_back(BRIT_6);
 		mySmallTalk.push_back(BRIT_7);
 	}
-};
+
 
 
 
