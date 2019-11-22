@@ -1,8 +1,8 @@
 /*
  * Smalltalk_American.cpp
  *
- *  Created on: Nov 21, 2019
- *      Author: guest-zcjj54
+ *  Created on: Nov 22, 2019
+ *      Author: Chandler Eskey
  */
 #pragma once
 #include <vector>
@@ -16,8 +16,8 @@ Smalltalk_American::Smalltalk_American(int iPerson) :
 		Smalltalk(AMERICAN, iPerson) {
 	populatePhrases();
 }
-Smalltalk_American::Smalltalk_American(std::string myNationality, int iPerson):
-		Smalltalk(AMERICAN, iPerson){
+Smalltalk_American::Smalltalk_American(std::string myNationality, int iPerson) :
+		Smalltalk(AMERICAN, iPerson) {
 
 }
 
